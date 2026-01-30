@@ -1,7 +1,13 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.demo</groupId>
-  <artifactId>hello-devops</artifactId>
-  <version>1.0</version>
-  <packaging>war</packaging>
-</project>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version> <!-- latest stable -->
+            <configuration>
+                <source>11</source> <!-- or 17 -->
+                <target>11</target> <!-- or 17 -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
